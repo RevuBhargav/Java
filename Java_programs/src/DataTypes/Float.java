@@ -8,6 +8,7 @@ void math1() {
 	long k = -2147483648;
 	System.out.println(l);
 	System.out.println(k);
+	
 }
 	public static void main(String[] args) {
 		Float obj = new Float();
