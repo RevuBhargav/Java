@@ -19,5 +19,5 @@ public class classP {
 		System.out.println("Student Name : "+obj.getStudentName());
         sc.close();
 	}
-
+ 
 }
