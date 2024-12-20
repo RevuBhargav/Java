@@ -1,18 +1,58 @@
 package Arrays;
 
+import java.util.Scanner;
+
 public class AddTwoMatrices {
 
 	public static void main(String[] args) {
-		int a1[][]= {{1,3,4},{2,4,3},{1,2,4}};
-		int a2[][]= {{1,3,4},{2,4,3},{1,2,4}};
-		int c[][]=new int[3][3];
-		for(int i=0;i<3;i++) {
-			for (int j=0;j<3;j++) {
-				c[i][j]=a1[i][j]+a2[i][j];
-				System.out.print(c[i][j]+" ");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ente a rows ");
+		int a = sc.nextInt();
+		System.out.println("enter the cols");
+//		int a2 = sc.nextInt();
+//		System.out.println("enter the rows");
+//		int b2 = sc.nextInt();
+//		System.out.println("enter a clos ");
+		int b =sc.nextInt();
+		int a1[][] = new int[a][b];
+		int b1[][]= new int[a][b];
+		int c[][]=new int[a][b];
+		System.out.println("enter the numbers");
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<b;j++) {
+				a1[i][j]=sc.nextInt();
 			}
 		}
-          System.out.println();    
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<b;j++) {
+				System.out.print(a1[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("Enter the second numbers");
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<b;j++) {
+				b1[i][j]=sc.nextInt();
+			}
+		}
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<b;j++) {
+				System.out.print(b1[i][j]+" ");
+			}
+			System.out.println();
+		}
+			
+		
+		System.out.println("adding matrix");
+		for(int i=0;i<a;i++) {
+			for (int j=0;j<b;j++) {
+				c[i][j]=a1[i][j]+b1[i][j];
+				System.out.print(c[i][j]+" ");
+			}
+			 System.out.println(); 
+		}
+            
 	}
 
 }

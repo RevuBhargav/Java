@@ -1,14 +1,14 @@
 package ThisKeyword;
 
 public class ExampleThisAndReturn {
-	public int math1(int a , int b) {
+	public int math1(int a , int b) { //a=18,b=5
 		System.out.println("math1called---------");
 		System.out.println(a);
-		return (a+b)+10+(a-b);
+		return (a+b)+10+(a-b);//46
 	}
 	public int math2() {
 		System.out.println("math2calles----------");
-		return this.math3()+8;
+		return this.math3()+8; // a=18
 	}
 	
 	public ExampleThisAndReturn(){
@@ -21,7 +21,7 @@ public class ExampleThisAndReturn {
 	}
 	public String math4(int a , String s) {
 		System.out.println("math4called--------");
-		a=a+4;
+		a=a+4;// a=50
 		System.out.println(a);
 		System.out.println(s);
 		return s+" is object oriented program";
