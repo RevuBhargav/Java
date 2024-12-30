@@ -1,12 +1,23 @@
 package Arrays;
 
+import java.util.Scanner;
+
 public class DuplicateElements {
 public static void main(String[] args) {
-	int arr[]= {12,2,3,4,12,23};
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a length : ");
+	int n=sc.nextInt();
+	System.out.println("plese enter the array : ");
+	int arr[]=new int[n];
 	//boolean flag = true;
 	for(int i=0;i<arr.length;i++) {
-		System.out.print(arr[i]+" ");
+		arr[i]=sc.nextInt();
 	}
+	System.out.println("-----------");
+	for(int i=0;i<arr.length;i++) {
+		System.out.print(+arr[i]+" ");
+	}
+	
 	System.out.println();
 	for(int i=0;i<arr.length;i++) {
 	

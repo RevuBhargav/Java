@@ -2,8 +2,8 @@ package Arrays;
 
 public class PairsInTheArray {
 public static void main(String[] args) {
-	int arr[]= {1,2,3,4,5,6,7,8};
-	int sum =9;
+	int arr[]= {1,2,3,4,5,12,7,8};
+	int sum =20;
 	int low=0;
 	int high = arr.length-1;
 	while(low < high) {

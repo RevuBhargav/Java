@@ -9,7 +9,7 @@ boolean math1(int[] num) {
 }
 public static void main(String[] args) {
 	methodsExp6 obj = new methodsExp6();
-	int input[]= {6,20,6};
+	int input[]= {7,20,6};
 	boolean b=obj.math1(input);
 	System.out.println(b);
 }

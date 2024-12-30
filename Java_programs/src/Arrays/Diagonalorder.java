@@ -26,7 +26,7 @@ public static void main(String[] args) {
 	 for (int col = 0; col < rows; col++) {
          int i = 0, j = col;
          while (i < cols && j >= 0) {
-             System.out.print(arr[i][j] + " ");
+             System.out.print("["+arr[i][j]+"]");
              i++;
              j--;
          }
@@ -35,7 +35,7 @@ public static void main(String[] args) {
 	 for(int row =1;row<cols;row++) {
 		 int i=row,j=cols-1;
 		 while (i < cols && j >= 0) {
-             System.out.print(arr[i][j] + " ");
+             System.out.print("["+arr[i][j]+"]");
              i++;
              j--;
          }
