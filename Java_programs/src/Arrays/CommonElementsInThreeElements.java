@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Scanner;
+
 public class CommonElementsInThreeElements {
 	public static void common(int arr1[],int arr2[],int arr3[]) {
 		int x=0,y=0,z=0;
@@ -23,11 +25,27 @@ public class CommonElementsInThreeElements {
 		}
 	
 public static void main(String[] args) {
-	int arr1[]= {1,5,10,20,40,80};
-	int arr2[]= {6,7,20,80,100};
-	int arr3[] = {3,4,15,20,30,70,80,120};
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the rows: ");	
+	int a = sc.nextInt();
 	
-	common(arr1,arr2,arr3);
+	int arr[]=new int[a];
+	int arr1[]=new int[a];
+	int arr2[]=new int[a];
+	for(int i=0;i<a;i++) {
+		arr[i]=sc.nextInt();
+	}
+	for(int i=0;i<a;i++) {
+		System.out.print(arr[i]+" "); 
+	}
+	for(int j=0;j<a;j++) {
+		arr[j]=sc.nextInt();
+	}
+	for(int j=0;j<a;j++) {
+		System.out.print(arr[j]+" "); 
+	}
+	
+	common(arr,arr1,arr2);
 			
 	}
 }
